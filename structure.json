@@ -1,0 +1,49 @@
+{
+  "romcom": {
+    "episodes": {
+      "1-2": "Meet-cute – quirky accident or forced situation introduces leads.",
+      "3-4": "Bickering & First Misunderstanding – comedic tension builds.",
+      "5-8": "Fake dating / Contract marriage / Rival appears, jealousy sparks.",
+      "9-10": "Feelings Deepen – first kiss, hidden vulnerability revealed.",
+      "11-12": "Separation – misunderstanding escalates, family/work disapproval.",
+      "13-15": "Realization – love confession, rival backs off, obstacles removed.",
+      "16": "Happy Ending – wedding, proposal, or lighthearted epilogue."
+    },
+    "optional_tropes": ["contract marriage", "childhood friends", "clumsy student", "rival love interest"]
+  },
+  "melodrama": {
+    "episodes": {
+      "1-2": "Tender Beginnings – innocent love or reunion of childhood friends.",
+      "3-6": "Conflict Rising – secrets, hidden illness, tragic backstories revealed.",
+      "7-8": "Turning Point – accident, amnesia, betrayal, or breakup.",
+      "9-12": "Emotional Struggle – illness worsens, rival gains ground, family pressures.",
+      "13-15": "Sacrifice – one lead pulls away to protect the other, tragedy looms.",
+      "16": "Bittersweet Ending – tearful farewell, death, or time skip reunion."
+    },
+    "optional_tropes": ["hidden illness", "amnesia", "tragic farewell", "time skip"]
+  },
+  "fantasy_supernatural": {
+    "episodes": {
+      "1-2": "World-Building – introduce supernatural being (alien, goblin, ghost).",
+      "3-4": "Mortal Meets Immortal – clashing personalities, comical tension.",
+      "5-8": "Powers & Secrets – backstory revealed, enemies introduced.",
+      "9-10": "Destiny Connection – reincarnation, fated love, cosmic twist.",
+      "11-13": "Crisis – hero must leave Earth, fight villain, or protect loved one.",
+      "14-15": "Sacrifice – disappearance, memory erased, near-death event.",
+      "16": "Resolution – reunion, eternity together, or open-ended fate."
+    },
+    "optional_tropes": ["secret identity", "time travel", "supernatural romance", "fate and prophecy"]
+  },
+  "action_thriller": {
+    "episodes": {
+      "1-2": "Setup – introduce hero’s mission, revenge goal, or undercover role.",
+      "3-4": "Inciting Incident – crime, betrayal, or personal loss sparks journey.",
+      "5-8": "Allies & Enemies – love interest introduced, rival forces clash.",
+      "9-10": "Midpoint Betrayal – shocking twist, trust broken, double agent revealed.",
+      "11-13": "Race Against Time – conspiracies deepen, truth uncovered.",
+      "14-15": "Climax – high-stakes showdown, villain confrontation.",
+      "16": "Resolution – justice served, reconciliation, or bittersweet farewell."
+    },
+    "optional_tropes": ["secret identity", "rival love interest", "mysterious doctor", "family disapproval"]
+  }
+}
