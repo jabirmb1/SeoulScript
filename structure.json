@@ -1,49 +1,184 @@
 {
-  "romcom": {
-    "episodes": {
-      "1-2": "Meet-cute – quirky accident or forced situation introduces leads.",
-      "3-4": "Bickering & First Misunderstanding – comedic tension builds.",
-      "5-8": "Fake dating / Contract marriage / Rival appears, jealousy sparks.",
-      "9-10": "Feelings Deepen – first kiss, hidden vulnerability revealed.",
-      "11-12": "Separation – misunderstanding escalates, family/work disapproval.",
-      "13-15": "Realization – love confession, rival backs off, obstacles removed.",
-      "16": "Happy Ending – wedding, proposal, or lighthearted epilogue."
+  "structure": {
+    "genres": {
+      "romcom": {
+        "episodes": {
+          "1-2": {
+            "description": "Meet-cute – quirky accident or forced situation introduces leads.",
+            "tropes": ["clumsy student", "childhood friends"]
+          },
+          "3-4": {
+            "description": "Bickering & First Misunderstanding – comedic tension builds.",
+            "tropes": ["rival love interest"]
+          },
+          "5-8": {
+            "description": "Fake dating / Contract marriage / Rival appears, jealousy sparks.",
+            "tropes": ["contract marriage", "rival love interest"]
+          },
+          "9-10": {
+            "description": "Feelings Deepen – first kiss, hidden vulnerability revealed.",
+            "tropes": ["childhood friends", "secret identity"]
+          },
+          "11-12": {
+            "description": "Separation – misunderstanding escalates, family/work disapproval.",
+            "tropes": ["family disapproval"]
+          },
+          "13-15": {
+            "description": "Realization – love confession, rival backs off, obstacles removed.",
+            "tropes": ["rival love interest", "contract marriage"]
+          },
+          "16": {
+            "description": "Happy Ending – wedding, proposal, or lighthearted epilogue.",
+            "tropes": ["childhood friends", "contract marriage"]
+          }
+        }
+      },
+      "melodrama": {
+        "episodes": {
+          "1-2": {
+            "description": "Tender Beginnings – innocent love or reunion of childhood friends.",
+            "tropes": ["hidden illness", "childhood friends"]
+          },
+          "3-6": {
+            "description": "Conflict Rising – secrets, hidden illness, tragic backstories revealed.",
+            "tropes": ["hidden illness", "tragic farewell"]
+          },
+          "7-8": {
+            "description": "Turning Point – accident, amnesia, betrayal, or breakup.",
+            "tropes": ["amnesia", "betrayal"]
+          },
+          "9-12": {
+            "description": "Emotional Struggle – illness worsens, rival gains ground, family pressures.",
+            "tropes": ["hidden illness", "family disapproval"]
+          },
+          "13-15": {
+            "description": "Sacrifice – one lead pulls away to protect the other, tragedy looms.",
+            "tropes": ["tragic farewell", "family disapproval"]
+          },
+          "16": {
+            "description": "Bittersweet Ending – tearful farewell, death, or time skip reunion.",
+            "tropes": ["time skip", "tragic farewell"]
+          }
+        }
+      },
+      "fantasy_supernatural": {
+        "episodes": {
+          "1-2": {
+            "description": "World-Building – introduce supernatural being (alien, goblin, ghost).",
+            "tropes": ["secret identity"]
+          },
+          "3-4": {
+            "description": "Mortal Meets Immortal – clashing personalities, comical tension.",
+            "tropes": ["supernatural romance", "fate and prophecy"]
+          },
+          "5-8": {
+            "description": "Powers & Secrets – backstory revealed, enemies introduced.",
+            "tropes": ["secret identity", "time travel"]
+          },
+          "9-10": {
+            "description": "Destiny Connection – reincarnation, fated love, cosmic twist.",
+            "tropes": ["fate and prophecy", "supernatural romance"]
+          },
+          "11-13": {
+            "description": "Crisis – hero must leave Earth, fight villain, or protect loved one.",
+            "tropes": ["secret identity", "supernatural romance"]
+          },
+          "14-15": {
+            "description": "Sacrifice – disappearance, memory erased, near-death event.",
+            "tropes": ["time travel", "secret identity"]
+          },
+          "16": {
+            "description": "Resolution – reunion, eternity together, or open-ended fate.",
+            "tropes": ["fate and prophecy", "supernatural romance"]
+          }
+        }
+      },
+      "action_thriller": {
+        "episodes": {
+          "1-2": {
+            "description": "Setup – introduce hero’s mission, revenge goal, or undercover role.",
+            "tropes": ["secret identity", "rival love interest"]
+          },
+          "3-4": {
+            "description": "Inciting Incident – crime, betrayal, or personal loss sparks journey.",
+            "tropes": ["mysterious doctor", "family disapproval"]
+          },
+          "5-8": {
+            "description": "Allies & Enemies – love interest introduced, rival forces clash.",
+            "tropes": ["mysterious doctor", "rival love interest"]
+          },
+          "9-10": {
+            "description": "Midpoint Betrayal – shocking twist, trust broken, double agent revealed.",
+            "tropes": ["rival love interest", "mysterious doctor", "family disapproval"]
+          },
+          "11-13": {
+            "description": "Race Against Time – conspiracies deepen, truth uncovered.",
+            "tropes": ["mysterious doctor", "family disapproval"]
+          },
+          "14-15": {
+            "description": "Climax – high-stakes showdown, villain confrontation.",
+            "tropes": ["rival love interest", "secret identity", "family disapproval"]
+          },
+          "16": {
+            "description": "Resolution – justice served, reconciliation, or bittersweet farewell.",
+            "tropes": ["mysterious doctor", "rival love interest"]
+          }
+        }
+      }
     },
-    "optional_tropes": ["contract marriage", "childhood friends", "clumsy student", "rival love interest"]
-  },
-  "melodrama": {
-    "episodes": {
-      "1-2": "Tender Beginnings – innocent love or reunion of childhood friends.",
-      "3-6": "Conflict Rising – secrets, hidden illness, tragic backstories revealed.",
-      "7-8": "Turning Point – accident, amnesia, betrayal, or breakup.",
-      "9-12": "Emotional Struggle – illness worsens, rival gains ground, family pressures.",
-      "13-15": "Sacrifice – one lead pulls away to protect the other, tragedy looms.",
-      "16": "Bittersweet Ending – tearful farewell, death, or time skip reunion."
-    },
-    "optional_tropes": ["hidden illness", "amnesia", "tragic farewell", "time skip"]
-  },
-  "fantasy_supernatural": {
-    "episodes": {
-      "1-2": "World-Building – introduce supernatural being (alien, goblin, ghost).",
-      "3-4": "Mortal Meets Immortal – clashing personalities, comical tension.",
-      "5-8": "Powers & Secrets – backstory revealed, enemies introduced.",
-      "9-10": "Destiny Connection – reincarnation, fated love, cosmic twist.",
-      "11-13": "Crisis – hero must leave Earth, fight villain, or protect loved one.",
-      "14-15": "Sacrifice – disappearance, memory erased, near-death event.",
-      "16": "Resolution – reunion, eternity together, or open-ended fate."
-    },
-    "optional_tropes": ["secret identity", "time travel", "supernatural romance", "fate and prophecy"]
-  },
-  "action_thriller": {
-    "episodes": {
-      "1-2": "Setup – introduce hero’s mission, revenge goal, or undercover role.",
-      "3-4": "Inciting Incident – crime, betrayal, or personal loss sparks journey.",
-      "5-8": "Allies & Enemies – love interest introduced, rival forces clash.",
-      "9-10": "Midpoint Betrayal – shocking twist, trust broken, double agent revealed.",
-      "11-13": "Race Against Time – conspiracies deepen, truth uncovered.",
-      "14-15": "Climax – high-stakes showdown, villain confrontation.",
-      "16": "Resolution – justice served, reconciliation, or bittersweet farewell."
-    },
-    "optional_tropes": ["secret identity", "rival love interest", "mysterious doctor", "family disapproval"]
+    "settings": [
+      {
+        "location": "Seoul café",
+        "description": "A cozy café where characters meet, bond, or reflect on their emotions.",
+        "common_scenes": ["Confessions", "Breakups", "Group hangouts"]
+      },
+      {
+        "location": "chaebol mansion",
+        "description": "Lavish home of a wealthy family, often symbolizing class divide.",
+        "common_scenes": ["Mother disapproves of poor heroine", "Family dinners full of tension"]
+      },
+      {
+        "location": "university",
+        "description": "Campus life full of friendships, rivalries, and first love.",
+        "common_scenes": ["Library encounters", "Sports field moments", "Student clubs"]
+      },
+      {
+        "location": "hospital",
+        "description": "High-pressure setting for medical dramas or where hidden illnesses are revealed.",
+        "common_scenes": ["Emergency surgeries", "Doctors bonding", "Illness confessions"]
+      },
+      {
+        "location": "small countryside town",
+        "description": "Peaceful rural setting that contrasts city life; often nostalgic or healing.",
+        "common_scenes": ["Farming sequences", "Festival celebrations", "Heartfelt reunions"]
+      },
+      {
+        "location": "high school",
+        "description": "A classic K-drama backdrop filled with first loves, bullies, and friendship.",
+        "common_scenes": ["Love triangles", "Bullying confrontations", "Graduation confessions"]
+      },
+      {
+        "location": "Han River bridge",
+        "description": "Iconic emotional backdrop for many dramas.",
+        "common_scenes": ["Cry after heartbreak", "Confession scene", "Accidental run-ins"]
+      }
+    ],
+    "arcs": {
+      "setup": [
+        "Introduce leads with contrasting personalities",
+        "Meet-cute (accidental encounter, mistaken identity, or comedic clash)",
+        "First misunderstanding (misheard conversation, wrong assumptions)"
+      ],
+      "conflict": [
+        "Rival appears (love triangle or corporate enemy)",
+        "Family disapproves (class divide, parental opposition)",
+        "Secrets revealed (hidden illness, identity, past trauma)"
+      ],
+      "resolution": [
+        "Final confession (public declaration of love, often in dramatic setting)",
+        "Happy ending (wedding, reunion, or symbolic future scene)",
+        "Bittersweet farewell (sacrifice, alternate timeline, or love remembered)"
+      ]
+    }
   }
 }
