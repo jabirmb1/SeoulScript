@@ -93,6 +93,69 @@
           }
         }
       },
+      "horror": {
+        "episodes": {
+          "1-2": {
+            "description": "Introduction – protagonists arrive at cursed place or strange events begin.",
+            "tropes": ["haunted house", "urban legend"]
+          },
+          "3-4": {
+            "description": "First Encounters – eerie visions, strange sounds, minor supernatural events.",
+            "tropes": ["ghost sighting", "ominous warning"]
+          },
+          "5-8": {
+            "description": "Escalation – possessions, unexplained deaths, or sinister entity revealed.",
+            "tropes": ["cursed object", "tragic backstory"]
+          },
+          "9-10": {
+            "description": "Turning Point – one character falls victim, group splinters in fear.",
+            "tropes": ["betrayal", "hidden cult"]
+          },
+          "11-13": {
+            "description": "Survival Struggle – exorcism, rituals, or desperate fight against evil.",
+            "tropes": ["exorcism", "sacrifice"]
+          },
+          "14-15": {
+            "description": "Climax – final showdown with entity, truth revealed.",
+            "tropes": ["haunted house", "tragic backstory"]
+          },
+          "16": {
+            "description": "Ending – ambiguous escape, twist survival, or evil persists.",
+            "tropes": ["time loop", "evil never dies"]
+          }
+        },
+        "comedy": {
+          "episodes": {
+            "1-2": {
+              "description": "Setup – quirky protagonist and oddball supporting cast introduced.",
+              "tropes": ["clumsy lead", "eccentric family"]
+            },
+            "3-4": {
+              "description": "First Antics – misunderstandings, pranks, or exaggerated scenarios.",
+              "tropes": ["mistaken identity", "rival prankster"]
+            },
+            "5-8": {
+              "description": "Chaos Escalates – multiple storylines collide in ridiculous ways.",
+              "tropes": ["workplace mishap", "over-the-top rival"]
+            },
+            "9-10": {
+              "description": "Heartfelt Moment – comedy slows for emotional bonding.",
+              "tropes": ["found family", "unexpected confession"]
+            },
+            "11-13": {
+              "description": "Big Disaster – wedding crash, festival chaos, or citywide mishap.",
+              "tropes": ["public embarrassment", "disaster turned funny"]
+            },
+            "14-15": {
+              "description": "Resolution Attempts – plans backfire with more comedy.",
+              "tropes": ["slapstick accident", "rival turned ally"]
+            },
+            "16": {
+              "description": "Happy Ending – lighthearted closure with callbacks to earlier jokes.",
+              "tropes": ["circle back gag", "group celebration"]
+            }
+          }
+        },
       "action_thriller": {
         "episodes": {
           "1-2": {
