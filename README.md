@@ -1,6 +1,6 @@
 # SeoulScript: K-Drama Story Structure & Episode Guide
 
-## My Vision: MVP Stage
+## My Vision:
 
 This project provides a **structured framework for K-drama storytelling**, designed to help writers, AI models, or enthusiasts to plan, visualise, and analyse Kdrama plots. The aim is to **systematically map episodes, tropes, and settings** across multiple genres, while maintaining flexibility for unique stories.
 
@@ -47,7 +47,7 @@ Conflict: Rival appears, family disapproval, secrets revealed.
 
 Resolution: Final confession, happy ending, or bittersweet farewell.
 
-## WIP: Diagram
+## WIP: Diagram for potential workflow
              ┌───────────────────┐
              │  Frontend (React) │
              │ - Genre selection │
