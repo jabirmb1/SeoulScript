@@ -1,6 +1,6 @@
 # SeoulScript: K-Drama Story Structure & Episode Guide
 
-## My Vision: MVP Stage
+## My Vision:
 
 This project provides a **structured framework for K-drama storytelling**, designed to help writers, AI models, or enthusiasts to plan, visualise, and analyse Kdrama plots. The aim is to **systematically map episodes, tropes, and settings** across multiple genres, while maintaining flexibility for unique stories.
 
@@ -37,7 +37,7 @@ Each genre contains episodes with **descriptions** and **tropes**:
 ```
 
 ---
-## Story Arcs =>
+## Story Arcs >>
 
 ### Three main arcs guide storytelling:
 
@@ -47,16 +47,37 @@ Conflict: Rival appears, family disapproval, secrets revealed.
 
 Resolution: Final confession, happy ending, or bittersweet farewell.
 
-## All Genres & Episode Ranges
-Genre	Episode Ranges	Description:
-
-Romcom	1-2, 3-4, 5-8, 9-12	From meet-cute and bickering to fake dating and resolution.
-
-Melodrama	1-2, 3-4, 5-8, 9-12	Emotional setup, secrets, rivalries, and dramatic endings.
-
-Fantasy / Supernatural	1-2, 3-4, 5-8, 9-12	Magical or supernatural introduction, conflicts, and resolution.
-
-Action / Thriller	1-2, 3-4, 5-8, 9-12	Hero setup, inciting incidents, rival clashes, and climax.
+## WIP: Diagram for potential workflow
+             ┌───────────────────┐
+             │  Frontend (React) │
+             │ - Genre selection │
+             │ - Episode output  │
+             └─────────┬─────────┘
+                       │ HTTP requests / responses
+                       ▼
+             ┌───────────────────┐
+             │  Spring Boot API  │
+             │ - REST endpoints  │
+             │ - Handles users   │
+             │ - JSON structures │
+             └─────────┬─────────┘
+                       │ API call (HTTP/gRPC)
+                       ▼
+             ┌───────────────────┐
+             │  Python AI Service│
+             │ - LLM integration │
+             │   (OpenAI, HF)    │
+             │ - Story generation│
+             │ - Script/Storyboard│
+             └─────────┬─────────┘
+                       │ JSON response
+                       ▼
+             ┌───────────────────┐
+             │      Database     │
+             │ - Tropes JSON     │
+             │ - Episode data    │
+             │ - User histories  │
+             └───────────────────┘
 
 ## Demo
 
