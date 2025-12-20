@@ -1,0 +1,64 @@
+{
+  "tropes": [
+    {
+      "name": "contract marriage",
+      "description": "Two characters agree to a fake or contractual relationship that eventually blossoms into real love.",
+      "examples": ["Business Proposal", "Full House", "Marriage Contract"]
+    },
+    {
+      "name": "childhood friends",
+      "description": "Leads share a history as childhood friends, which complicates or deepens their romance.",
+      "examples": ["Reply 1988", "Lovely Runner", "Twinkling Watermelon"]
+    },
+    {
+      "name": "love triangle",
+      "description": "A third person enters the romance, causing jealousy and rivalry.",
+      "examples": ["Boys Over Flowers", "Heirs", "Strong Woman Do Bong Soon"]
+    },
+    {
+      "name": "amnesia",
+      "description": "A character forgets their memories, usually erasing their love story until it’s rekindled.",
+      "examples": ["Boys Over Flowers", "Winter Sonata", "Summer Strike"]
+    },
+    {
+      "name": "hidden illness",
+      "description": "A lead secretly suffers from a terminal or chronic illness, creating tension in the romance.",
+      "examples": ["Uncontrollably Fond", "A Thousand Days’ Promise"]
+    },
+    {
+      "name": "time travel",
+      "description": "Leads travel across timelines or dimensions to rewrite fate or reunite with loved ones.",
+      "examples": ["Mr. Queen", "Lovely Runner", "Twinkling Watermelon", "Moon Lovers: Scarlet Heart Ryeo"]
+    },
+    {
+      "name": "supernatural romance",
+      "description": "Love story involves ghosts, goblins, magic, or other fantasy elements.",
+      "examples": ["Goblin", "Alchemy of Souls", "My Love from the Star"]
+    },
+    {
+      "name": "rich CEO heir",
+      "description": "A wealthy chaebol heir falls for a humble, ordinary girl.",
+      "examples": ["Boys Over Flowers", "Heirs", "Crash Landing on You"]
+    },
+    {
+      "name": "clumsy student",
+      "description": "Female lead is quirky, clumsy, or naïve, often contrasting the male lead’s stoicism.",
+      "examples": ["Strong Woman Do Bong Soon", "Weightlifting Fairy Kim Bok-joo"]
+    },
+    {
+      "name": "rival love interest",
+      "description": "Another character actively pursues one lead, heightening the romantic conflict.",
+      "examples": ["Heirs (Choi Young-do)", "Crash Landing on You (Seo Dan)"]
+    },
+    {
+      "name": "mysterious doctor",
+      "description": "A skilled doctor with a troubled past or hidden secrets becomes a central figure.",
+      "examples": ["Trauma Code", "Descendants of the Sun", "Doctor Stranger"]
+    },
+    {
+      "name": "secret identity",
+      "description": "One or both leads conceal their true identity or background.",
+      "examples": ["Vincenzo", "Mr. Queen", "Business Proposal"]
+    }
+  ]
+}

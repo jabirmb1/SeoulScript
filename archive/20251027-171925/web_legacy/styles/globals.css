@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #__next {
+  height: 100%;
+}
+
+body {
+  background-color: #0b1020;
+  background-image: radial-gradient(1px 1px at 10% 20%, rgba(255,255,255,0.35) 0, transparent 100%),
+    radial-gradient(1px 1px at 30% 80%, rgba(255,255,255,0.25) 0, transparent 100%),
+    radial-gradient(1px 1px at 80% 30%, rgba(255,255,255,0.3) 0, transparent 100%);
+}
+
+/***** Typography tweaks *****/
+h1, h2, h3 { letter-spacing: -0.02em; }

@@ -1,58 +1,54 @@
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+ENV/
+*.egg-info/
 
-# testing
-/coverage
+# Database
+*.db
+*.sqlite
+*.sqlite3
+seoulscript.db
 
-# next.js
-/.next/
-/out/
+# Environment variables
+.env
+.env.local
 
-# production
-/build
-
-# misc
-.DS_Store
-*.pem
-
-# debug
+# Node.js / Frontend
+node_modules/
+.next/
+out/
+build/
+dist/
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# local env files
-.env*.local
-.env
-
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
-
-# --- Node / Frontend ---
-frontend/node_modules/
-frontend/.next/
-frontend/.env
-frontend/.env.local
-
-# --- Python / Backend ---
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-outputs/
-data/__pycache__/
-
-# --- Environment Files ---
-.env
-.env.local
-.env.*
-
-# --- OS / Misc ---
+# OS files
 .DS_Store
 Thumbs.db
-archive/
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Outputs
+outputs/
+*.csv
+*.xlsx
+
+# Temporary files
+*.tmp
+*.bak
+*.swp

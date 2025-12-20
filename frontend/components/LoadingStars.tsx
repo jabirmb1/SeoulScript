@@ -1,21 +1,28 @@
-import { motion } from 'framer-motion';
+"use client";
+
+import { motion } from "framer-motion";
 
 export default function LoadingStars() {
   return (
-    <div className="mt-8 flex items-center justify-center">
-      <motion.div
-        className="h-8 w-8 rounded-full border-2 border-neon-purple/60 border-t-transparent"
-        animate={{ rotate: 360 }}
-        transition={{ repeat: Infinity, ease: 'linear', duration: 1.2 }}
-      />
-      <motion.span
-        className="ml-3 text-silver/80"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: [0.4, 1, 0.4] }}
-        transition={{ repeat: Infinity, duration: 2.4 }}
-      >
-        writing scene…
-      </motion.span>
+    <div className="flex flex-col items-center justify-center gap-6 py-20">
+      <div className="flex gap-2">
+        {[0, 1, 2].map((i) => (
+          <motion.div
+            key={i}
+            className="w-3 h-3 bg-violet-500 rounded-full"
+            animate={{
+              scale: [1, 1.5, 1],
+              opacity: [0.5, 1, 0.5],
+            }}
+            transition={{
+              duration: 1.5,
+              repeat: Infinity,
+              delay: i * 0.2,
+            }}
+          />
+        ))}
+      </div>
+      <p className="text-slate-400 text-sm">Loading stories...</p>
     </div>
   );
 }

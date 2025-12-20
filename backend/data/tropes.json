@@ -1,64 +1,140 @@
 {
-  "tropes": [
-    {
-      "name": "contract marriage",
-      "description": "Two characters agree to a fake or contractual relationship that eventually blossoms into real love.",
-      "examples": ["Business Proposal", "Full House", "Marriage Contract"]
-    },
-    {
-      "name": "childhood friends",
-      "description": "Leads share a history as childhood friends, which complicates or deepens their romance.",
-      "examples": ["Reply 1988", "Lovely Runner", "Twinkling Watermelon"]
-    },
-    {
-      "name": "love triangle",
-      "description": "A third person enters the romance, causing jealousy and rivalry.",
-      "examples": ["Boys Over Flowers", "Heirs", "Strong Woman Do Bong Soon"]
-    },
-    {
-      "name": "amnesia",
-      "description": "A character forgets their memories, usually erasing their love story until it’s rekindled.",
-      "examples": ["Boys Over Flowers", "Winter Sonata", "Summer Strike"]
-    },
-    {
-      "name": "hidden illness",
-      "description": "A lead secretly suffers from a terminal or chronic illness, creating tension in the romance.",
-      "examples": ["Uncontrollably Fond", "A Thousand Days’ Promise"]
-    },
-    {
-      "name": "time travel",
-      "description": "Leads travel across timelines or dimensions to rewrite fate or reunite with loved ones.",
-      "examples": ["Mr. Queen", "Lovely Runner", "Twinkling Watermelon", "Moon Lovers: Scarlet Heart Ryeo"]
-    },
-    {
-      "name": "supernatural romance",
-      "description": "Love story involves ghosts, goblins, magic, or other fantasy elements.",
-      "examples": ["Goblin", "Alchemy of Souls", "My Love from the Star"]
-    },
-    {
-      "name": "rich CEO heir",
-      "description": "A wealthy chaebol heir falls for a humble, ordinary girl.",
-      "examples": ["Boys Over Flowers", "Heirs", "Crash Landing on You"]
-    },
-    {
-      "name": "clumsy student",
-      "description": "Female lead is quirky, clumsy, or naïve, often contrasting the male lead’s stoicism.",
-      "examples": ["Strong Woman Do Bong Soon", "Weightlifting Fairy Kim Bok-joo"]
-    },
-    {
-      "name": "rival love interest",
-      "description": "Another character actively pursues one lead, heightening the romantic conflict.",
-      "examples": ["Heirs (Choi Young-do)", "Crash Landing on You (Seo Dan)"]
-    },
-    {
-      "name": "mysterious doctor",
-      "description": "A skilled doctor with a troubled past or hidden secrets becomes a central figure.",
-      "examples": ["Trauma Code", "Descendants of the Sun", "Doctor Stranger"]
-    },
-    {
-      "name": "secret identity",
-      "description": "One or both leads conceal their true identity or background.",
-      "examples": ["Vincenzo", "Mr. Queen", "Business Proposal"]
-    }
-  ]
+  "Romance": {
+    "opening_hooks": [
+      "A chance encounter in the rain",
+      "An accidental collision at a coffee shop",
+      "Reuniting after years apart",
+      "Forced to work together on a project",
+      "Neighbors who keep running into each other"
+    ],
+    "relationship_dynamics": [
+      "Enemies to lovers",
+      "Childhood friends to romance",
+      "Boss and employee",
+      "Fake dating turns real",
+      "Second chance romance"
+    ],
+    "conflict_types": [
+      "Class difference",
+      "Family disapproval",
+      "Career vs. love",
+      "Past trauma",
+      "Miscommunication"
+    ]
+  },
+  "Melodrama": {
+    "opening_hooks": [
+      "A terminal diagnosis",
+      "A long-hidden secret surfaces",
+      "A betrayal by someone close",
+      "An impossible choice",
+      "A tragic accident"
+    ],
+    "relationship_dynamics": [
+      "Star-crossed lovers",
+      "Family torn apart",
+      "Sacrifice for others",
+      "Forbidden love",
+      "Redemption arc"
+    ],
+    "conflict_types": [
+      "Illness",
+      "Revenge",
+      "Guilt",
+      "Loss",
+      "Moral dilemma"
+    ]
+  },
+  "Comedy": {
+    "opening_hooks": [
+      "A hilarious misunderstanding",
+      "A disastrous first date",
+      "An accidental identity swap",
+      "Moving in with the wrong roommate",
+      "A chaotic family gathering"
+    ],
+    "relationship_dynamics": [
+      "Bickering partners",
+      "Awkward crushes",
+      "Unlikely friendship",
+      "Competitive rivals",
+      "Opposites attract"
+    ],
+    "conflict_types": [
+      "Comedy of errors",
+      "Social awkwardness",
+      "Cultural clash",
+      "Workplace chaos",
+      "Family interference"
+    ]
+  },
+  "Thriller": {
+    "opening_hooks": [
+      "A mysterious text message",
+      "Witnessing something dangerous",
+      "A missing person case",
+      "Discovering a conspiracy",
+      "Being followed by a stranger"
+    ],
+    "relationship_dynamics": [
+      "Investigator and suspect",
+      "Allies in danger",
+      "Hunter and hunted",
+      "Protector and protected",
+      "Reluctant partners"
+    ],
+    "conflict_types": [
+      "Hidden identity",
+      "Corporate corruption",
+      "Stalker",
+      "Frame-up",
+      "Psychological manipulation"
+    ]
+  },
+  "Fantasy": {
+    "opening_hooks": [
+      "Discovering hidden powers",
+      "Meeting a supernatural being",
+      "Crossing into another realm",
+      "A prophetic dream",
+      "An ancient curse awakens"
+    ],
+    "relationship_dynamics": [
+      "Human and immortal",
+      "Destined soulmates",
+      "Guardian and ward",
+      "Master and apprentice",
+      "Parallel universe selves"
+    ],
+    "conflict_types": [
+      "Fate vs. free will",
+      "Power corruption",
+      "Two worlds colliding",
+      "Breaking a curse",
+      "Sacrifice for the greater good"
+    ]
+  },
+  "Historical": {
+    "opening_hooks": [
+      "An arranged marriage",
+      "A forbidden meeting",
+      "A revolution brewing",
+      "A lost royal heir",
+      "A secret rebellion"
+    ],
+    "relationship_dynamics": [
+      "Nobility and commoner",
+      "Political allies",
+      "Master and servant",
+      "Rival families",
+      "Mentor and protégé"
+    ],
+    "conflict_types": [
+      "Social hierarchy",
+      "Political intrigue",
+      "War",
+      "Honor vs. heart",
+      "Tradition vs. change"
+    ]
+  }
 }

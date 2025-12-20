@@ -3,26 +3,62 @@
 @tailwind utilities;
 
 :root {
-  --bg: #0b132b;
-}
-
-html, body {
-  height: 100%;
+  --font-playfair: "Playfair Display", serif;
+  --font-jetbrains: "JetBrains Mono", monospace;
 }
 
 body {
-  background: var(--bg);
-  color: #e0e0e0;
+  font-family: var(--font-jetbrains);
 }
 
-/* Star field */
-.stars {
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  background-image:
-    radial-gradient(1px 1px at 10% 20%, rgba(255,255,255,0.35) 0, transparent 100%),
-    radial-gradient(1px 1px at 30% 80%, rgba(255,255,255,0.25) 0, transparent 100%),
-    radial-gradient(1px 1px at 80% 30%, rgba(255,255,255,0.3) 0, transparent 100%);
-  animation: twinkle 4s ease-in-out infinite;
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-playfair);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(99, 102, 241, 0.5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(99, 102, 241, 0.7);
+}
+
+/* Glow effect utility */
+.glow {
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+}
+
+.glow-text {
+  text-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+}
+
+/* Animations */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.shimmer {
+  animation: shimmer 2s infinite linear;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent 100%
+  );
+  background-size: 1000px 100%;
 }

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeoulScript AI</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SeoulScript AI 🇰🇷</h1>
+            <p>K-Drama Storyboard & Script Generator</p>
+        </header>
+
+        <form id="generator-form">
+            <div class="form-group">
+                <label for="genre-select">Genre</label>
+                <select id="genre-select" required>
+                    <option value="" disabled selected>Loading genres...</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="episode-input">Episode Range (e.g., 1-2, or leave blank for all)</label>
+                <input type="text" id="episode-input" placeholder="e.g., 5-8">
+            </div>
+
+            <div class="form-group mode-select">
+                <label>Generation Mode</label>
+                <div>
+                    <input type="radio" id="mode-storyboard" name="mode" value="storyboard" checked>
+                    <label for="mode-storyboard">Storyboard</label>
+                </div>
+                <div>
+                    <input type="radio" id="mode-script" name="mode" value="script">
+                    <label for="mode-script">Script</label>
+                </div>
+            </div>
+
+            <div class="form-group-inline">
+                <input type="checkbox" id="examples-check">
+                <label for="examples-check">Use examples from summaries.txt</label>
+            </div>
+
+            <button type="submit" id="generate-btn">Generate</button>
+        </form>
+
+        <div id="loading-spinner" class="hidden"></div>
+        <div id="results-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

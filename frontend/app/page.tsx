@@ -1,90 +1,138 @@
 "use client";
 
-import { useState } from 'react';
-import Header from '@/components/Header';
-import GenreSelector from '@/components/GenreSelector';
-import LoadingStars from '@/components/LoadingStars';
-import StoryCard from '@/components/StoryCard';
+import { useEffect, useState } from "react";
+import StoryCard from "@/components/StoryCard";
+import LoadingStars from "@/components/LoadingStars";
 
-const API_BASE = process.env.NEXT_PUBLIC_API_BASE || 'http://localhost:8000';
-
-type ApiResponse = {
+interface Story {
+  id: string;
   title: string;
   genre: string;
-  director_notes: string[] | string;
-  scene_script: string;
-};
+  preview: string;
+  view_count: number;
+  created_at: string;
+  pen_name?: string;
+}
 
-export default function Page() {
-  const [genre, setGenre] = useState('romcom');
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState('');
-  const [title, setTitle] = useState('');
-  const [notes, setNotes] = useState<string[] | string>('');
-  const [script, setScript] = useState('');
+export default function Home() {
+  const [stories, setStories] = useState<Story[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [page, setPage] = useState(1);
+  const [total, setTotal] = useState(0);
+  const [selectedGenre, setSelectedGenre] = useState<string | null>(null);
 
-  const onGenerate = async () => {
-    setError('');
+  const genres = ["Romance", "Melodrama", "Comedy", "Thriller", "Fantasy", "Historical"];
+
+  useEffect(() => {
+    loadStories();
+  }, [page, selectedGenre]);
+
+  const loadStories = async () => {
     setLoading(true);
     try {
-      const res = await fetch(`${API_BASE}/api/generate`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ genre })
-      });
-      if (!res.ok) {
-        const text = await res.text();
-        throw new Error(text || 'Request failed');
-      }
-      const data: ApiResponse = await res.json();
-      setTitle(data.title || '');
-      setNotes(data.director_notes || []);
-      setScript(data.scene_script || '');
-    } catch (e: any) {
-      setError(e?.message || 'Failed to generate');
+      const genreParam = selectedGenre ? `&genre=${selectedGenre}` : "";
+      const response = await fetch(
+        `http://localhost:8000/api/stories?page=${page}&limit=20${genreParam}`
+      );
+      const data = await response.json();
+      setStories(data.stories);
+      setTotal(data.total);
+    } catch (error) {
+      console.error("Failed to load stories:", error);
     } finally {
       setLoading(false);
     }
   };
 
-  const onCopy = async () => {
-    try {
-      await navigator.clipboard.writeText(`${title ? title + "\n\n" : ''}${Array.isArray(notes) ? notes.join('\n') : (notes || '')}${notes ? '\n\n' : ''}${script}`);
-    } catch {}
+  const handleGenreFilter = (genre: string | null) => {
+    setSelectedGenre(genre);
+    setPage(1);
   };
 
-  const onReset = () => {
-    setTitle('');
-    setNotes('');
-    setScript('');
-    setError('');
-  };
+  if (loading && stories.length === 0) {
+    return (
+      <div className="container mx-auto px-4 py-20">
+        <LoadingStars />
+      </div>
+    );
+  }
 
   return (
-    <main className="mx-auto max-w-3xl px-6 py-10">
-      <Header />
-
-      <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur p-5 shadow-glow">
-        <p className="mb-3 text-silver/80 text-sm">Select your genre to begin…</p>
-        <GenreSelector value={genre} onChange={setGenre} />
-
-        <button
-          onClick={onGenerate}
-          disabled={loading}
-          className="mt-4 w-full rounded-xl bg-neon-purple/40 hover:bg-neon-purple/50 text-white py-3 font-medium shadow-glow transition"
-        >
-          🎬 Generate Scene
-        </button>
-
-        {loading && <LoadingStars />}
-        {error && <div className="mt-6 rounded-lg bg-red-500/10 border border-red-500/30 p-3 text-red-200 text-sm">{error}</div>}
-
-        {(title || script) && !loading && (
-          <StoryCard title={title} notes={notes} script={script} onCopy={onCopy} onReset={onReset} />
-        )}
+    <div className="container mx-auto px-4 py-12">
+      {/* Hero Section */}
+      <div className="text-center mb-16">
+        <h2 className="text-5xl font-bold mb-4 glow-text">
+          Stories Written Under Seoul Stars
+        </h2>
+        <p className="text-slate-400 text-lg max-w-2xl mx-auto">
+          Short-form K-drama fanfiction, crafted by AI and remixed by dreamers.
+        </p>
       </div>
 
-      <footer className="mt-10 text-center text-xs text-silver/70">SeoulScript • Night skies and stories ✨</footer>
-    </main>
+      {/* Genre Filter */}
+      <div className="flex flex-wrap gap-3 mb-12 justify-center">
+        <button
+          onClick={() => handleGenreFilter(null)}
+          className={`px-4 py-2 rounded-lg transition-all ${
+            selectedGenre === null
+              ? "bg-violet-600 text-white glow"
+              : "bg-slate-800/50 text-slate-300 hover:bg-slate-700/50"
+          }`}
+        >
+          All
+        </button>
+        {genres.map((genre) => (
+          <button
+            key={genre}
+            onClick={() => handleGenreFilter(genre)}
+            className={`px-4 py-2 rounded-lg transition-all ${
+              selectedGenre === genre
+                ? "bg-violet-600 text-white glow"
+                : "bg-slate-800/50 text-slate-300 hover:bg-slate-700/50"
+            }`}
+          >
+            {genre}
+          </button>
+        ))}
+      </div>
+
+      {/* Stories Grid */}
+      {stories.length === 0 ? (
+        <div className="text-center py-20">
+          <p className="text-slate-400 text-lg">
+            No stories yet. Be the first to create one! ✨
+          </p>
+        </div>
+      ) : (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          {stories.map((story) => (
+            <StoryCard key={story.id} story={story} />
+          ))}
+        </div>
+      )}
+
+      {/* Pagination */}
+      {total > 20 && (
+        <div className="flex justify-center gap-4">
+          <button
+            onClick={() => setPage(p => Math.max(1, p - 1))}
+            disabled={page === 1}
+            className="px-6 py-2 bg-slate-800/50 rounded-lg disabled:opacity-50 disabled:cursor-not-allowed hover:bg-slate-700/50 transition-all"
+          >
+            Previous
+          </button>
+          <span className="px-6 py-2 text-slate-400">
+            Page {page} of {Math.ceil(total / 20)}
+          </span>
+          <button
+            onClick={() => setPage(p => p + 1)}
+            disabled={page >= Math.ceil(total / 20)}
+            className="px-6 py-2 bg-slate-800/50 rounded-lg disabled:opacity-50 disabled:cursor-not-allowed hover:bg-slate-700/50 transition-all"
+          >
+            Next
+          </button>
+        </div>
+      )}
+    </div>
   );
 }
